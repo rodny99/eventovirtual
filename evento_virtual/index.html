@@ -1,0 +1,844 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Evento Virtual</title>    
+        <!-- Plugins CSS -->
+        <link href="css/plugins/plugins.css" rel="stylesheet">
+        <link href="css/style-event.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="js/alertifyjs/css/themes/default.css">
+		<link rel="stylesheet" type="text/css" href="js/alertifyjs/css/alertify.css">
+		
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/alertifyjs/alertify.js"></script>
+    </head>
+
+    <body data-spy="scroll" data-offset="58" data-target="#navbarevent">
+        <div id="preloader">
+            <div id="preloader-inner"></div>
+        </div><!--/preloader-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-faded navbar-sticky navbar-transparent">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarevent" aria-controls="navbarevent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarevent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-scroll href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-scroll href="#about">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-scroll href="#speakers">Conferencistas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-scroll href="#schedule">Agenda</a>
+                    </li>
+					<!--
+                    <li class="nav-item">
+                        <a class="nav-link" data-scroll href="#pricing">Pricing</a>
+                    </li>
+					-->
+                    <li class="nav-item">
+                        <a class="nav-link" data-scroll href="#sponsors">Patrocinadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary" href="paginas/registro.php">Registrarse</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link btn btn-success" href="paginas/login.php" data-target="#ticketsModal">Ingresar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav><!--navbar-->
+        <div id="home" class="fullscreen-hero bg-overlay bg-parallax" data-jarallax='{"speed": 0.4}' style='background-image: url("images/escenografia.jpg")'>
+            <div class="hero-content">
+                <div class="hero-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 text-center mr-auto ml-auto">
+                                <h5 class="text-white font700"></h5>
+                                <h5 class="font700 mb20 text-white display-3 text-uppercase">Conferencia virtual</h5>
+                                <p class="text-white-gray mb30 lead">
+                                    02 Noviembre - 03 Noviembre 2020
+                                </p>
+                                <div class="social-buttons">
+                                    <a data-scroll href="#pricing" class="btn btn-lg btn-primary btn-rounded mr-3">Registrarse</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--home-->
+		<!--------------------------------------about-------------------------------------------------------->
+        <div id="about">
+            <div class="half-image-content">
+                <div class="content-img bg-parallax pos-left hidden-md-down" data-jarallax='{"speed": 0.2}' style="background:url(images/event/about.jpg) no-repeat;">
+                </div>
+                <img src="images/event/about.jpg" class="visible-lg-down hidden-lg-up img-fluid" alt="">
+                <div class="container">
+                   <div class="row">
+                        <div class="col-lg-6 ml-auto  pt80 pb80">
+                        <h2 class="mb20">
+                            Acerca de la Conferencia Virtual
+                        </h2>
+                        <div class="clearfix">
+                            <p>
+                                La celebración de eventos físicos suele tener un gran atractivo tanto para empresas como para asistentes. Sin embargo, en algunas ocasiones el elevado coste que supone para una compañía producir un evento presencial o la falta de tiempo y la distancia geográfica de los invitados potenciales reducen las probabilidades de éxito de un evento.
+                            </p>
+                            <p>
+                                La celebración de eventos físicos suele tener un gran atractivo tanto para empresas como para asistentes. Sin embargo, en algunas ocasiones el elevado coste que supone para una compañía producir un evento presencial o la falta de tiempo y la distancia geográfica de los invitados potenciales reducen las probabilidades de éxito de un evento.
+                            </p><br>
+                            <h5 class="font700">Conference will start in</h5>
+                            <div class="count-down text-white" data-end-date="Nov 2, 2020 00:00:00"></div>
+                            <a href="#schedule" data-scroll class="btn btn-primary mr-3 mb-2">View Schedule</a>
+                            <a href="#pricing" data-scroll class="btn btn-dark mr-3 mb-2">Pricing</a>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </div><!--half image section-->
+        </div>
+		<!-------------------------------------FIN ABOUT----------------------------------------------------->
+        
+		<!----------------------------------CONFERENCISTAS---------------------------------------------------->
+		<div id="speakers" class="pt90 pb60 bg-faded">
+            <div class="container">
+                <div class="center-title mb60 text-center">
+                    <h2>Nuestros Conferencistas</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 mb30">
+                        <div class="speaker-card">
+                            <img src="images/team1.jpg" alt="" class="img-fluid">
+                            <div class="team-overlay align-items-center">
+                                <div class="team-detail">
+                                    <h4>Emily Doe</h4>
+                                    <span>Marketing manager</span>
+                                    <div class="seprator-overlay"></div>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#"> <i class="fa fa-youtube"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--/col-->
+                    <div class="col-md-4 mb30">
+                        <div class="speaker-card">
+                            <img src="images/team2.jpg" alt="" class="img-fluid">
+                            <div class="team-overlay align-items-center">
+                                <div class="team-detail">
+                                    <h4>Nathan Musa</h4>
+                                    <span>Marketing manager</span>
+                                    <div class="seprator-overlay"></div>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#"> <i class="fa fa-youtube"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--/col-->
+                    <div class="col-md-4 mb30">
+                        <div class="speaker-card">
+                            <img src="images/team3.jpg" alt="" class="img-fluid">
+                            <div class="team-overlay align-items-center">
+                                <div class="team-detail">
+                                    <h4>Adam Howkins</h4>
+                                    <span>Marketing manager</span>
+                                    <div class="seprator-overlay"></div>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#"> <i class="fa fa-youtube"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--/col-->
+                </div>
+            </div>
+        </div>
+        <div class="pt100 pb70 parallax-overlay bg-parallax" data-jarallax='{"speed": 0.4}' style='background-image: url("images/event/bg1.jpg")'>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 mb30 text-center">
+                        <i class="ti-bookmark-alt text-white fa-2x"></i>
+                        <h2 class="text-white display-4">230</h2>
+                        <p class="text-white-gray h4 font700">Tema</p>
+                    </div><!--/.col-->
+                    <div class="col-md-6 col-lg-3 mb30 text-center">
+                        <i class="ti-user text-white fa-2x"></i>
+                        <h2 class="text-white display-4">14</h2>
+                        <p class="text-white-gray h4 font700">Conferencistas</p>
+                    </div><!--/.col-->
+                    <div class="col-md-6 col-lg-3 mb30 text-center">
+                        <i class="ti-flag text-white fa-2x"></i>
+                        <h2 class="text-white display-4">54</h2>
+                        <p class="text-white-gray h4 font700">Patrocinadores</p>
+                    </div><!--/.col-->
+                    <div class="col-md-6 col-lg-3 mb30 text-center">
+                        <i class="ti-world text-white fa-2x"></i>
+                        <h2 class="text-white display-4">39</h2>
+                        <p class="text-white-gray h4 font700">Paises</p>
+                    </div><!--/.col-->
+                </div>
+            </div>
+        </div>
+     	<!--------------------------------fin CONFERENCISTAS---------------------------------------------------->
+		
+		
+		<!-------------------------------------------- AGENDA ------------------------------------------->
+		<div id="schedule" class="pt90 pb90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 mr-auto ml-auto text-center">
+                        <div class="center-title mb60">
+                            <h2>Agenda</h2>
+                            <p class="lead">
+                                02 - 03 November 2020.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin-b-30">
+                    <div class="col-md-10 mr-auto ml-auto">
+                        <div>
+
+                            <!-- Nav tabs -->
+                            <ul class="nav tabs-schedule nav-tabs list-inline" role="tablist">
+                                <li role="presentation" class="nav-item"><a class="nav-link active" href="#fday" aria-controls="fday" role="tab" data-toggle="tab">Dia 1 <span>2 Noviembre 2020</span></a></li>
+                                <li role="presentation" class="nav-item"><a href="#sday" aria-controls="sday" role="tab" data-toggle="tab">Dia 2 <span>3 Noviembre 2020</span></a></li>
+                                <!-- 
+								<li role="presentation" class="nav-item"><a class="nav-link" href="#03" aria-controls="03" role="tab" data-toggle="tab">Day 3 <span>3 November 2016</span></a></li> 
+								-->
+								
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                              <div role="tabpanel" class="tab-pane active" id="fday">
+                                    <div class="row margin-b-30">
+                                        <div class="col-sm-3 event-info">
+                                            <span>Lunes</span>
+                                            <span>9:00 AM A 10:45 AM</span>
+                                        <!--<span class="event-hall">Basement R1</span> -->
+                                        </div>
+                                        <div class="col-sm-9 event-detail">
+                                            <h3><a href="#">Introduccion a eventos virtuales</a></h3>
+                                            <div class="row margin-b-20">
+                                                <div class="col-sm-2">
+                                                    <img src="images/team1.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <h4>Tareg Gechen</h4>
+                                                    <p>
+                                                        El objetivo de estas reuniones es con la finalidad de dejar una imagen positiva en clientes, proveedores y colaboradores, crear un alto impacto con cada detalle del evento, generado pertenencia, credibilidad, y reconocimiento entre un grupo de invitados, además de compartir un agradable momento disfrutando de un delicioso y variado banquete.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="row margin-b-30">
+                                        <div class="col-sm-3 event-info">
+                                            <span>Lunes</span>
+                                            <span>11:00 AM A 11:45 AM</span>
+                                        <!--<span class="event-hall">Basement R1</span> -->
+                                        </div>
+                                        <div class="col-sm-9 event-detail">
+                                            <h3><a href="#">Un cambio de visión en los clientes</a></h3>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <img src="images/team4.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <h4>Alberto Lopez</h4>
+                                                    <p>
+                                                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings, the master-builder of human happiness
+                                                    </p>
+													<br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row margin-b-30" style="opacity: 0.7;">
+                                        <div class="col-sm-3 event-info">
+                                            <span>LUNES</span>
+                                            <span>1:00 AM A 2:00 AM</span>
+                                        <!--<span class="event-hall">Fulkari Restaurant</span> -->
+                                        </div>
+                                        <div class="col-sm-9 event-detail">
+                                            <h3><a href="#">Receso para Almuerzo</a></h3>
+                                            <p>
+                                       			<br>
+											
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3 event-info">
+                                            <span>LUNES</span>
+                                            <span>2:00 AM A 4:30 AM</span>
+                                        <!--<span class="event-hall">Basement R1</span> -->
+                                        </div>
+                                        <div class="col-sm-9 event-detail">
+                                            <h3><a href="#">Redes Sociales para Eventos</a></h3>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <img src="images/team4.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <h4>Rachel Franco</h4>
+                                                    <p>
+                                                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings, the master-builder of human happiness
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              <div role="tabpanel" class="tab-pane" id="sday">
+                                    <div class="row margin-b-30">
+                                        <div class="col-sm-3 event-info">
+                                            <span>Martes</span>
+                                            <span>9:00 AM A 10:45 AM</span>
+                                        <!-- <span class="event-hall">Basement R2</span> -->
+                                        </div>
+                                        <div class="col-sm-9 event-detail">
+                                            <h3><a href="#">Plataformas de Transmision</a></h3>
+                                            <div class="row margin-b-20">
+                                                <div class="col-sm-2">
+                                                    <img src="images/team1.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <h4>Ruben Hurtado</h4>
+                                                    <p>
+                                                        Experiencia en operaciones logisticas y de ventas
+														<br>
+														<br>
+														<br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row margin-b-30">
+                                        <div class="col-sm-3 event-info">
+                                            <span>Martes</span>
+                                            <span>11:00 AM a 11:45 AM</span>
+                                            <span class="event-hall">Basement R1</span>
+                                        </div>
+                                        <div class="col-sm-9 event-detail">
+                                            <h3><a href="#">Compra de productos digitales</a></h3>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <img src="images/team4.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <h4>Henry Hurtado</h4>
+                                                    <p>
+                                                         Proceso de compra en productos digitales. los retos que debe asumir el personal de compra frente a un producto intangible.
+														<br>
+														<br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row margin-b-30" style="opacity: 0.7;">
+                                        <div class="col-sm-3 event-info">
+                                            <span>MARTES</span>
+                                            <span>1:00 AM A 2:00 AM</span>
+                                        <!--<span class="event-hall">Fulkari Restaurant</span> -->
+                                        </div>
+                                        <div class="col-sm-9 event-detail">
+                                            <h3><a href="#">Receso para Almuerzo</a></h3>
+                                            <p>
+                                       			<br>
+											
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3 event-info">
+                                            <span>MARTES</span>
+                                            <span>2:00 AM A 4:30 AM</span>
+                                        <!--    <span class="event-hall">Basement R1</span> -->
+                                        </div>
+                                        <div class="col-sm-9 event-detail">
+                                            <h3><a href="#">Planificacion de un evento virtual</a></h3>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <img src="images/team4.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <h4>Jose Carmona</h4>
+                                                    <p>
+                                                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings, the master-builder of human happiness
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade " id="03">
+                                    <div class="row margin-b-30">
+                                        <div class="col-sm-3 event-info">
+                                            <span>Wednesday</span>
+                                            <span>9:00 AM to 10:45 AM</span>
+                                            <span class="event-hall">Basement R1</span>
+                                        </div>
+                                        <div class="col-sm-9 event-detail">
+                                            <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                                            <div class="row margin-b-20">
+                                                <div class="col-sm-2">
+                                                    <img src="images/team5.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <h4>John Miller</h4>
+                                                    <p>
+                                                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings, the master-builder of human happiness
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <img src="images/team6.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <h4>Adam Doe</h4>
+                                                    <p>
+                                                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings, the master-builder of human happiness
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row margin-b-30">
+                                        <div class="col-sm-3 event-info">
+                                            <span>Wednesday</span>
+                                            <span>11:00 AM to 11:45 AM</span>
+                                            <span class="event-hall">Basement R1</span>
+                                        </div>
+                                        <div class="col-sm-9 event-detail">
+                                            <h3><a href="#">Roadmap about bootstrap updates</a></h3>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <img src="images/team4.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <h4>Robert</h4>
+                                                    <p>
+                                                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings, the master-builder of human happiness
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row margin-b-30" style="opacity: 0.7;">
+                                        <div class="col-sm-3 event-info">
+                                            <span>Wednesday</span>
+                                            <span>1:00 AM to 2:00 AM</span>
+                                            <span class="event-hall">Fulkari Restaurant</span>
+                                        </div>
+                                        <div class="col-sm-9 event-detail">
+                                            <h3><a href="#">lunch</a></h3>
+                                            <p>
+                                                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings, the master-builder of human happiness
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3 event-info">
+                                            <span>Wednesday</span>
+                                            <span>2:00 AM to 4:30 AM</span>
+                                            <span class="event-hall">Basement R1</span>
+                                        </div>
+                                        <div class="col-sm-9 event-detail">
+                                            <h3><a href="#">Closing ceremony</a></h3>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <img src="images/team4.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <h4>Smitha Doe</h4>
+                                                    <p>
+                                                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings, the master-builder of human happiness
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-----------------------------------  FIN DE LA AGENDA ----------------------------------------->
+	   
+        <!-------------------------------------------- PLANES ------------------------------------------->
+		<div class="bg-dark pt90 pb60" id="pricing">
+            <div class="container">
+                <div class="center-title mb60 text-center">
+                    <h2 class="text-white">Ticket pricing</h2>
+                    <p class="text-white-gray">Easy pricing. Cancel anytime.</p>
+                </div>
+                <div class="row">
+                <div class="pricing-table  align-items-center">
+                    <div class="col-lg-3 col-md-6 plan">
+                        <div class="plan-header">
+                            <h4>Bronze pass</h4>
+                            <h1 class="text-info">$99.99 <small>/ 1 Seat</small></h1>
+                            <h6>Front View</h6>
+                        </div>
+                        <a href="#" class="btn btn-secondary btn-lg btn-block">Book Now</a>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-check-circle-o"></i> <strong>5Gb</strong> Disk Space</li>
+                            <li><i class="fa fa-check-circle-o"></i> <strong>50Gb</strong> Monthly Bandwdith</li>
+                            <li><i class="fa fa-check-circle-o"></i> <strong>10</strong> Email Accounts</li>
+                            <li><i class="fa fa-check-circle-o"></i> <strong>Unlimited</strong> Sub domains</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 plan popular-plan">
+                        <div class="plan-header">
+                            <div class="mb30"><span class="badge badge-primary">Best Value</span></div>
+                            <h4>Silver Pass</h4>
+                            <h1 class="text-primary">$199.99 <small>/ Seat</small></h1>
+                            <h6>Middle view</h6>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-lg btn-block">Book Now</a>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-check-circle-o"></i> <strong>5Gb</strong> Disk Space</li>
+                            <li><i class="fa fa-check-circle-o"></i> <strong>50Gb</strong> Monthly Bandwdith</li>
+                            <li><i class="fa fa-check-circle-o"></i> <strong>10</strong> Email Accounts</li>
+                            <li><i class="fa fa-check-circle-o"></i> <strong>Unlimited</strong> Sub domains</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 plan">
+                        <div class="plan-header">
+                            <h4>Golden pass</h4>
+                            <h1 class="text-info">$299.99 <small>/ 1 seat</small></h1>
+                             <h6>All benefits</h6>
+                        </div>
+                        <a href="#" class="btn btn-secondary btn-lg btn-block">Book Now</a>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-check-circle-o"></i> <strong>500Gb</strong> Disk Space</li>
+                            <li><i class="fa fa-check-circle-o"></i> <strong>50Gb</strong> Monthly Bandwdith</li>
+                            <li><i class="fa fa-check-circle-o"></i> <strong>Unlimited</strong> Email Accounts</li>
+                            <li><i class="fa fa-check-circle-o"></i> <strong>Unlimited</strong> Sub domains</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 plan">
+                        <div class="plan-header">
+                            <h4>VIP pass</h4>
+                            <h1 class="text-info">$399.99 <small>/ 1 seat</small></h1>
+                            <h6>All benefits</h6>
+                        </div>
+                        <a href="#" class="btn btn-secondary btn-lg btn-block">Book Now</a>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-check-circle-o"></i> <strong>5Gb</strong> Disk Space</li>
+                            <li><i class="fa fa-check-circle-o"></i> <strong>50Gb</strong> Monthly Bandwdith</li>
+                            <li><i class="fa fa-check-circle-o"></i> <strong>10</strong> Email Accounts</li>
+                            <li><i class="fa fa-check-circle-o"></i> <strong>Unlimited</strong> Sub domains</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+		<!-------------------------------------------FIN PLANES ------------------------------------------->
+       
+        <div class="bg-faded">
+            <div id="sponsors" class="pt90 pb90">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 mr-auto ml-auto text-center">
+                            <div class="center-title mb60">
+                                <h2>Patrocinadores</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row sponsors-row">
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+                            <a href="#">
+                                <img src="images/partner1.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+                            <a href="#">
+                                <img src="images/partner2.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+                            <a href="#">
+                                <img src="images/partner3.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+                            <a href="#">
+                                <img src="images/partner4.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+                            <a href="#">
+                                <img src="images/partner5.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+                            <a href="#">
+                                <img src="images/partner1.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+                            <a href="#">
+                                <img src="images/partner2.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+                            <a href="#">
+                                <img src="images/partner5.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+                            <a href="#">
+                                <img src="images/partner4.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+                            <a href="#">
+                                <img src="images/partner3.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+                            <a href="#">
+                                <img src="images/partner1.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+                            <a href="#">
+                                <img src="images/partner2.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Schedule-->
+        </div><!--sponsors-->
+       
+		<!--------------------------------------------FOOTER---------------------------------------------->
+		<footer class="footer bg-dark">
+            <div class="container pt60 pb30">
+                <div class="row">
+                    <div class="col-lg-4 mb30">
+                        <img src="images/logo-light.png" alt="" class="img-fluid mb20">
+                        <p class="text-white-gray mb30">
+                            Plataforma para eventos desrrollada por CopyEventos SAS.
+							Copy Eventos es una empresa conformada por profesionales entregados y entrenados en la planeación, coordinación y organización de todo tipo de eventos y convenciones.
+                        </p>
+                        <div class="cleafix">
+                            <a href="#" class="social-icon si-dark si-colored-facebook">
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#" class="social-icon  si-dark si-colored-twitter">
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div><!--/col-->
+                    <div class="col-lg-4 mb30">
+                        <h4 class="text-white mb20"></span></h4>
+                        <div class="insta-post">
+                            <a href="#">
+                                <img src="images/img1.jpg" alt="" class="img-fluid">
+                            </a>
+                            <a href="#">
+                                <img src="images/img2.jpg" alt="" class="img-fluid">
+                            </a>
+                            <a href="#">
+                                <img src="images/img3.jpg" alt="" class="img-fluid">
+                            </a>
+                            <a href="#">
+                                <img src="images/img4.jpg" alt="" class="img-fluid">
+                            </a>
+                            <a href="#">
+                                <img src="images/img5.jpg" alt="" class="img-fluid">
+                            </a>
+                            <a href="#">
+                                <img src="images/img6.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div><!--/col-->
+                    <div class="col-lg-4 mb30">
+                        <h4 class="text-white mb20">Servicios</h4>
+                        <div class="tags-post">
+                            <a href="#">
+                                Eventos Virtuales 
+                            </a>
+                            <a href="#">
+                                Sonido
+                            </a>
+                            <a href="#">
+                                Iluminacion
+                            </a>
+                            <a href="#">
+                                Proyeccion
+                            </a>
+                            <a href="#">
+                                Stands
+                            </a>
+                            <a href="#">
+                                Impresiones
+                            </a>
+                        </div>
+                    </div><!--/col-->
+                </div>
+            </div>
+            <div class="container text-center pt30 pb60">
+                <span class="text-white-gray">&copy; Copyright 2017. All right reserved.</span>
+            </div>
+        </footer>
+		<!----------------------------- FIN    footer------------------------------------------------------>
+        <!--register modal-->
+        <!-- Modal -->
+        <div class="modal fade modal-event-form" id="ticketsModal" tabindex="-1" role="dialog" aria-labelledby="ticketsModal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title h4" id="exampleModalLabel">Registrate al Evento</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i class="ti-close"></i></span>
+                        </button>
+                    </div>
+                    <form id="frmRegistro">
+                        <div class="modal-body">
+                            <div class="row">
+								<div class="col-md-12 mb10">
+                                    <select class="form-control" required="" id="tipodocumento">
+                                        <option value="">Tipo de documento</option>
+                                        <option value="1">CC</option>
+                                        <option value="2">Pasaporte</option>
+                                    </select>
+                                </div>
+								<div class="col-md-12 mb10">
+                                    <input type="text" class="form-control" placeholder="Numero documento" id="numero" required="" >
+                                </div>
+                                <div class="col-md-12 mb10">
+                                    <input type="text" class="form-control" placeholder="Nombres" id="nombres" required="">
+                                </div>
+								<div class="col-md-12 mb10">
+                                    <input type="text" class="form-control" placeholder="apellidos" id="apellidos" required="">
+                                </div>
+                                <div class="col-md-12 mb10">
+                                    <input type="text" class="form-control" placeholder="correo" id="correo" required="">
+                                </div>
+                                <div class="col-md-12 mb10">
+                                    <input type="text" class="form-control" placeholder="telefono" id="telefono" required="">
+                                </div>
+								 <div class="col-md-12 mb10">
+                                    <input type="text" class="form-control" placeholder="usuario" id="usuario" required="">
+                                </div>
+                                <div class="col-md-12 mb10">
+                                    <input type="text" class="form-control" placeholder="contraseña" id="password" required="">
+                                </div>								
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                           <span class="btn btn-primary" id="registrarNuevo">Registrar</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--back to top  -->
+        <a href="#" class="back-to-top hidden-xs-down" id="back-to-top"><i class="ti-angle-up"></i></a>
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+	
+        <script src="js/plugins/plugins.js"></script> 
+        <script src="js/event.custom.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#registrarNuevo').click(function(){
+			if($('#nombre').val()==""){
+				alertify.alert("Debes agregar el nombre");
+				return false;
+			}else if($('#apellido').val()==""){
+				alertify.alert("Debes agregar el apellido");
+				return false;
+			}else if($('#usuario').val()==""){
+				alertify.alert("Debes agregar el usuario");
+				return false;
+			}else if($('#password').val()==""){
+				alertify.alert("Debes agregar el password");
+				return false;
+			}
+
+			cadena="nombres=" + $('#nombres').val() +
+					"&apellidos=" + $('#apellidos').val() +
+					"&usuario=" + $('#usuario').val() + 
+					"&password=" + $('#password').val();
+
+					$.ajax({
+						type:"POST",
+						url:"paginas/php/registro.php",
+						data:cadena,
+						success:function(r){
+
+							if(r==2){
+								alertify.alert("Este usuario ya existe, prueba con otro :)");
+							}
+							else if(r==1){
+								$('#frmRegistro')[0].reset();
+								alertify.success("Agregado con exito");
+							}else{
+								alertify.error("Fallo al agregar");
+							}
+						}
+					});
+		});
+	});
+</script>
+    </body>
+</html>
